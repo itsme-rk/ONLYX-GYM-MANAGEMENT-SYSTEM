@@ -32,3 +32,14 @@ CREATE TABLE coach (
     experience INT,
     salary DECIMAL(10, 2)
 );
+
+CREATE TABLE Billing (
+    billing ID INT AUTO_INCREMENT PRIMARY KEY,
+    Member_ID INT,
+    Plan VARCHAR(100),
+    Amount DECIMAL(10, 2),
+    Billing_Date DATE,
+    Payment_Option VARCHAR(100),
+    FOREIGN KEY (Member_ID) REFERENCES Member(ID)
+);
+
