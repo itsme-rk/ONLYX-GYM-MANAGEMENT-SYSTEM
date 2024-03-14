@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyX Gym - Admin Land</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333 !important;
+        }
+
+
+        .nav-link {
+            color: #fff !important;
+        }
+        
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #444;
+            padding-top: 60px;
+        }
+
+        .sidebar-nav-link {
+            color: #fff !important;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .sidebar-nav-link:hover {
+            background-color: #555;
+        }
+
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-top: 0;
+
+            & img{
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .rules-section {
+            margin-top: 50px;
+        }
+        h2{
+            text-align: center;
+        }
+
+        .rules-section h2,h3 {
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .admin-jobs {
+            margin-top: 50px;
+        }
+
+        .admin-jobs h2 {
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .job-item {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Navbar -->
+    <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Website</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.php">Logout</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a class="navbar-brand" href="aland.html" ><img src="logo.jpg" alt="OnlyX Gym Logo" height="80px;" width="120px;" style="margin-left: 20px;"></a>
+        <a href="aland.html" class="sidebar-nav-link">Dashboard</a>
+        <a href="members.php" class="sidebar-nav-link">Members</a>
+        <a href="membership.php" class="sidebar-nav-link">Membership</a>
+        <a href="receptionist.php" class="sidebar-nav-link">Receptionist</a>
+        <a href="coach.php" class="sidebar-nav-link">Coaches</a>
+        <a href="billing.php" class="sidebar-nav-link">Billing</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <img src="back.jpg" alt="Gym Image" style="width: 80%; height: 700px;">
+        </div>
+
+        <!-- Admin Rules -->
+        <div class="rules-section">
+            <h2>Rules and Guidelines</h2>
+            
+            <div class="admin-rules">
+                <h3>Admin Rules</h3>
+                <ul>
+                    <li>Staff Conduct: Admin staff must maintain a professional demeanor and provide assistance to gym members as needed.</li>
+                    <li>Facility Maintenance: Ensure the gym facility is clean, organized, and well-maintained at all times.</li>
+                    <li>Equipment Management: Regularly inspect and maintain gym equipment to ensure functionality and safety.</li>
+                    <li>Member Registration: Properly register new members and maintain accurate records of membership details.</li>
+                    <li>Scheduling: Coordinate class schedules, personal training sessions, and facility bookings efficiently.</li>
+                    <li>Security Measures: Implement security protocols to safeguard the gym premises and prevent unauthorized access.</li>
+                    <li>Emergency Preparedness: Develop and communicate emergency procedures to staff and members for prompt response to any incidents.</li>
+                    <li>Policy Enforcement: Enforce gym rules and regulations consistently to maintain a safe and inclusive environment.</li>
+                    <li>Communication: Keep members informed about gym updates, events, and policy changes through various communication channels.</li>
+                    <li>Professional Development: Continuously train and develop staff to provide excellent customer service and expertise in fitness-related areas.</li>
+                </ul>
+            </div>
+            
+            <div class="customer-rules">
+                <h3>Customer Rules (To be conveyed)</h3>
+                <ul>
+                    <li>Membership Card: Always carry and present your membership card upon entry. Access to the gym is only permitted to registered members.</li>
+                    <li>Dress Code: Wear appropriate gym attire and footwear. Avoid clothing with offensive language or graphics.</li>
+                    <li>Equipment Etiquette: Respect other members by using equipment courteously and returning it to its proper place after use.</li>
+                    <li>Cleanliness: Wipe down equipment before and after use with provided disinfectant wipes. Dispose of trash properly.</li>
+                    <li>Safety Measures: Follow all safety instructions and use equipment as intended. Report any malfunctioning equipment to gym staff immediately.</li>
+                    <li>Personal Belongings: Store personal belongings in designated areas and avoid leaving valuables unattended. The gym is not responsible for lost or stolen items.</li>
+                    <li>Respect Others: Be mindful of other members' space and avoid disruptive behavior. Use headphones when listening to music and keep conversations at a reasonable volume.</li>
+                    <li>Hydration: Stay hydrated by bringing a water bottle. Refill stations are available for your convenience.</li>
+                    <li>Group Classes: Arrive on time for scheduled group classes and follow instructions from the instructor. Respect the class format and other participants.</li>
+                    <li>Exit Protocol: Clean up after yourself and exit the gym promptly at closing time. Respect staff instructions and adhere to any additional rules posted within the facility.</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- Admin Jobs -->
+        <div class="admin-jobs">
+            <h2>Admin Jobs</h2>
+            <div class="job-item">
+                <h3>Receptionist</h3>
+                <p>1. Greet and assist gym members upon arrival.</p>
+                <p>2. Process new member registrations and update membership database.</p>
+                <p>3. Answer phone calls, schedule appointments, and respond to inquiries.</p>
+                <p>4. Maintain cleanliness and organization of the reception area.</p>
+                <p>5. Assist with billing, payments, and membership renewals.</p>
+            </div>
+            <div class="job-item">
+                <h3>Coach</h3>
+                <p>1. Develop customized workout plans for clients based on their fitness goals and abilities.</p>
+                <p>2. Lead group fitness classes and provide individualized training sessions.</p>
+                <p>3. Monitor client progress, adjust training programs as needed, and provide ongoing motivation and support.</p>
+                <p>4. Educate clients on proper exercise techniques, nutrition, and injury prevention.</p>
+                <p>5. Stay updated on industry trends and certifications to maintain expertise in fitness training.</p>
+            </div>
+            <div class="job-item">
+                <h3>Membership Coordinator</h3>
+                <p>1. Promote gym membership packages and special promotions to attract new members.</p>
+                <p>2. Conduct facility tours and provide information about gym amenities, services, and membership benefits.</p>
+                <p>3. Process membership applications, handle paperwork, and ensure accurate membership records.</p>
+                <p>4. Follow up with prospective members and assist with membership inquiries.</p>
+                <p>5. Collaborate with marketing team to develop marketing materials and campaigns to increase membership sales.</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

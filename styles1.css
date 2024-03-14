@@ -1,0 +1,367 @@
+/* Add your CSS styles here */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Add your existing styles here */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+nav {
+    background: var(--dark-color);
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Reduced padding */
+    height: 60px; /* Set your desired height */
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+}
+
+nav ul li {
+    margin: 0 2px;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+    font-size: large;
+    font-weight: 700;
+
+    &:hover {
+        color: red;
+    }
+}
+
+.user-circle {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-circle img {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e3770c;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.main-img img {
+    width: 100vb;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero1 img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+.button {
+    background-color: transparent;
+    /* Green */
+    border: none;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid red;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    margin-bottom: -20px; /* Adjust this value as needed */
+}
+
+.hero1{
+    margin-bottom: -20px;
+}
+
+#new-to-the-my-gym-working-hours-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.895);
+    /* Or any other background color you prefer */
+    justify-content: space-evenly;
+    height: 400px;
+    margin-bottom: -21px;
+}
+.left-section {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+}
+.right-section {
+    width: 40%;
+    
+    
+}
+h1,
+h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+   color: white;
+    padding: 10px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 10px;
+}
+
+.but {
+
+    background-color: red;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+    &:hover{
+        opacity: .8;
+        background-color: white;
+        color: red;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.workout-timetable {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    background-color: red;
+  }
+  #left{
+    background-color: red;
+  }
+  .workout-timetable{
+    background-color: black;
+  }
+  .main-content{
+    background-color: black;
+    height: 550px;
+  }
+  tr{
+    color: white;
+  }
+  span{
+    color: rgba(255, 255, 255, 0.425);
+  }
+  .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.form {
+    max-width: 400px;
+    text-align: center;
+}
+
+.form h2 {
+    color: black;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.map {
+    text-align: center;
+}
+
+.map h1 {
+    color: black;
+}
+
+#yoo{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+        color: red;
+        background-color: white;
+        border: 3px solid black;
+    }
+}
+.map {
+    border-top: 1px solid #efebeb;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+  }
+  
+  .map iframe {
+    height: 380px;
+    width:700px;
+  }
+
+  .about-us {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-us img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
