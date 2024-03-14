@@ -43,3 +43,31 @@ CREATE TABLE Billing (
     FOREIGN KEY (Member_ID) REFERENCES Member(ID)
 );
 
+CREATE TABLE Membership (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Plan VARCHAR(100),
+    Monthly_Price DECIMAL(10, 2),
+    Annual_Price DECIMAL(10, 2),
+    Access VARCHAR(255)
+);
+CREATE TABLE `receptionist` (
+  `id` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `date` varchar(20) NOT NULL,
+  `address` varchar(20) NOT NULL,
+  `phone` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE Schedule (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Day VARCHAR(100),
+    Workout_Type VARCHAR(255),
+    Diet_Plan VARCHAR(255)
+);
+
+CREATE TABLE Signup (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(100) UNIQUE,
+    Password VARCHAR(255)
+);
+
