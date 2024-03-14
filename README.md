@@ -71,3 +71,13 @@ CREATE TABLE Signup (
     Password VARCHAR(255)
 );
 
+CREATE TABLE JoinUsSubmissions (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20) NOT NULL,
+    Position VARCHAR(20) NOT NULL,
+    ResumePath VARCHAR(255) NOT NULL,
+    Message TEXT,
+    SubmissionTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
