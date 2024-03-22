@@ -233,7 +233,7 @@ $result = mysqli_query($connection, $query);
 </section>
 <footer class="footer mt-auto py-3 bg-dark">
     <div class="container text-center">
-        <span class="text-muted">© 2024 Coach Management System. All rights reserved.</span>
+        <span class="text-muted">© 2024 OnlyX Management System. All rights reserved.</span>
     </div>
 </footer>
 

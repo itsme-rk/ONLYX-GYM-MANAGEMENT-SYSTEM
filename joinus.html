@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Onlyx GYM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo img {
+            height: 55px;
+            margin-left: 10px;
+        }
+
+        .logo h1 {
+            display: inline;
+            color: #ff3c00;
+            margin-left: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-us {
+            text-align: justify;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 19px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ff3c00;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #ff3c00;
+        }
+
+        button {
+            background-color: #ff3c00;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d13200;
+        }
+
+        video {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Gym Logo">
+            <h1>Onlyx GYM</h1>
+        </div>
+    </header>
+
+    <main>
+        <video autoplay loop muted playsinline>
+            <source src="Fitness Cinematic video Gym commercial Cinematic fitness film Fitness commercial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="about-us">
+            <p>Welcome to <span>Onlyx GYM</span>, where fitness meets passion! At Onlyx GYM, we are dedicated to helping individuals achieve their fitness goals and lead healthier lives. With state-of-the-art facilities, expert coaches, and a supportive community, we strive to create an environment where everyone feels motivated and empowered to reach their full potential.</p>
+
+            <p>Our mission is to inspire and guide individuals on their fitness journey, whether they're beginners or seasoned athletes. From personalized workout plans to nutritional guidance, we offer comprehensive fitness solutions tailored to each individual's needs and goals.</p>
+
+            <p>At Onlyx GYM, we believe in the transformative power of fitness to improve not only physical health but also mental well-being. Our team of experienced coaches and staff are committed to providing the highest level of support and guidance to help you succeed on your fitness journey.</p>
+
+            <p>Join us today and become a part of the Onlyx GYM community. Together, let's unlock your potential and achieve greatness!</p>
+        </div>
+
+        <form action="join_us_submission.php" method="post" enctype="multipart/form-data">
+            <h2><span>Join Us</span></h2>
+            <p>If you're passionate about fitness and helping others achieve their goals, we'd love to hear from you! Please fill out the form below to apply for a position as a coach or receptionist:</p>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="position">Position Applied For:</label>
+            <select id="position" name="position" required>
+                <option value="coach">Coach</option>
+                <option value="receptionist">Receptionist</option>
+            </select>
+
+            <label for="resume">Resume (PDF or Word file):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+            <label for="message">Message (optional):</label>
+            <textarea id="message" name="message" rows="10" cols="50"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
