@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <title>Login Page</title>
 </head>
+<style>
+    .yoo{
+        
+    }
+</style>
 
 <body ng-controller="authController" class="login-container" style="background-image: url(back1.avif); opacity: 0.85;">
     <div class="conta">
@@ -22,7 +27,7 @@
                 <button type="submit"><b>Login</b></button>
 
                 <p><b>Don't have an account? </b><a href="#" ng-click="toggleAuth()"> <span style="font-weight: 600;">Sign Up</span> </a></p>
-
+                <button type="submit" style="padding: 5px;">FORGOT PASSWORD</button>
                 <!-- Admin Login Link/Button -->
                 <p><b>Or </b><a href="admin-login.php" ng-click="adminLogin()"><b>Login as Admin</b></a></p>
             </form>
@@ -42,6 +47,7 @@
                 <input type="password" id="confirmPassword" name="confirmPassword" ng-model="confirmPassword" required>
 
                 <button type="submit"><b>Sign Up</b></button>
+                <button type="submit" style="padding: 5px;">FORGOT PASSWORD</button>
 
                 <p><b>Already have an account? </b><a href="#" ng-click="toggleAuth()"><b>Login</b></a></p>
             </form>

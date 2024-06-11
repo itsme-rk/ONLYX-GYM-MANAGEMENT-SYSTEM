@@ -1,4 +1,4 @@
-<?php
+x`<?php
 include "config.php";
 
 // Handle form submission for adding new coach
