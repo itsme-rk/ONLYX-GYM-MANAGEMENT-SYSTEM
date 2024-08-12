@@ -12,18 +12,3 @@ link for website .. but u need xampp and phpMyAdmin running
 ![image](https://github.com/itsme-rk/ONLYX-GYM-MANAGEMENT-SYSTEM/assets/107808330/4cd9e739-e0e2-4a17-a9b0-e5424d7210d4)
 ![image](https://github.com/itsme-rk/ONLYX-GYM-MANAGEMENT-SYSTEM/assets/107808330/6cf7c9e5-b7f4-4a88-8419-f10f8f269b48)
 
-Complete project recent files updated 
-for the database part we have used mysql from phpmyadmin xampp
-database name "OnlyX"
-table
-
-CREATE TABLE Member (
-    ID INT AUTO_INCREMENT PRIMARY KEY,
-    Name VARCHAR(255),
-    Username VARCHAR(100) UNIQUE,
-    Gender ENUM('male', 'female', 'other'),
-    Date_of_Joining DATE,
-    Date_of_Birth DATE,
-    Phone VARCHAR(20),
-    Email VARCHAR(255),
-    Coach_ID INT,
