@@ -1,4 +1,4 @@
-https://itsme-rk.github.io/ONLYX-GYM-MANAGEMENT-SYSTEM/#about-us
+https://itsme-rk.github.io/ONLYX-GYM-MANAGEMENT-SYSTEM/
 
 link for website .. but u need xampp and phpMyAdmin running
 
@@ -27,62 +27,3 @@ CREATE TABLE Member (
     Phone VARCHAR(20),
     Email VARCHAR(255),
     Coach_ID INT,
-    FOREIGN KEY (Coach_ID) REFERENCES Coach(ID)
-);
-
-CREATE TABLE coach (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    date DATE NOT NULL,
-    experience INT,
-    salary DECIMAL(10, 2)
-);
-
-CREATE TABLE Billing (
-    billing ID INT AUTO_INCREMENT PRIMARY KEY,
-    Member_ID INT,
-    Plan VARCHAR(100),
-    Amount DECIMAL(10, 2),
-    Billing_Date DATE,
-    Payment_Option VARCHAR(100),
-    FOREIGN KEY (Member_ID) REFERENCES Member(ID)
-);
-
-CREATE TABLE Membership (
-    ID INT AUTO_INCREMENT PRIMARY KEY,
-    Plan VARCHAR(100),
-    Monthly_Price DECIMAL(10, 2),
-    Annual_Price DECIMAL(10, 2),
-    Access VARCHAR(255)
-);
-CREATE TABLE `receptionist` (
-  `id` varchar(20) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `date` varchar(20) NOT NULL,
-  `address` varchar(20) NOT NULL,
-  `phone` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-CREATE TABLE Schedule (
-    ID INT AUTO_INCREMENT PRIMARY KEY,
-    Day VARCHAR(100),
-    Workout_Type VARCHAR(255),
-    Diet_Plan VARCHAR(255)
-);
-
-CREATE TABLE Signup (
-    ID INT AUTO_INCREMENT PRIMARY KEY,
-    Username VARCHAR(100) UNIQUE,
-    Password VARCHAR(255)
-);
-
-CREATE TABLE JoinUsSubmissions (
-    ID INT AUTO_INCREMENT PRIMARY KEY,
-    Name VARCHAR(255) NOT NULL,
-    Email VARCHAR(255) NOT NULL,
-    Phone VARCHAR(20) NOT NULL,
-    Position VARCHAR(20) NOT NULL,
-    ResumePath VARCHAR(255) NOT NULL,
-    Message TEXT,
-    SubmissionTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
